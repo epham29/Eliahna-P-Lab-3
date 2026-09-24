@@ -14,7 +14,30 @@ def multiply(x,y):
 def divide(x,y):
     print(x/y)
 
-x = int(input("Enter the first number: "))
-y = int(input("Enter the second number: ")
-
 print("Welcome")
+
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+
+user_input =input("Would you like to (a)dd, (s)ubtract, (m)ultiply, or (d)ivide?: ")
+
+if user_input == "a":
+    print("add")
+    add(x, y)
+
+elif user_input == "s":
+    print("subtract")
+    subtract(x, y)
+
+elif user_input == "m":
+    print("multiply")
+    multiply(x, y)
+
+elif user_input == "d":
+    print("divide")
+    divide(x, y)
+
+else: 
+    print("Invalid input")
+
+
