@@ -9,35 +9,35 @@ def subtract(x,y):
 # Function that multiplies two numbers
 def multiply(x,y):
     print(x*y)
-
+          
 # Function that divides two numbers
 def divide(x,y):
     print(x/y)
 
 print("Welcome")
+print("What would you like to do?")
+print("Type (a)dd (s)ubtract (m)ultiply (d)ivide or (q)uit")
+
+user_choice =input(": ")
+
+while user_choice == "q":
+    print("Goodbye...")
+    exit()
+
+if user_choice not in ["a","s","m","d","q"]: 
+    print("Invalid input")
 
 x = int(input("Enter the first number: "))
 y = int(input("Enter the second number: "))
 
-user_input =input("Would you like to (a)dd, (s)ubtract, (m)ultiply, or (d)ivide?: ")
-
-if user_input == "a":
-    print("add")
+if user_choice == "a":
     add(x, y)
 
-elif user_input == "s":
-    print("subtract")
+elif user_choice == "s":
     subtract(x, y)
 
-elif user_input == "m":
-    print("multiply")
+elif user_choice == "m":
     multiply(x, y)
 
-elif user_input == "d":
-    print("divide")
+elif user_choice == "d":
     divide(x, y)
-
-else: 
-    print("Invalid input")
-
-
